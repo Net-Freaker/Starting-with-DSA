@@ -59,15 +59,15 @@ public class Mergelist{
         else{
             temp.next=a;
         }
-        return temp.next;
+        return dummy.next;
     }
     
 
     public static void main(String[] args) {
         Mergelist ml1=new Mergelist();
        ml1.head=new ListNode(2);
-        ListNode second=new ListNode(12);
-        ListNode third=new ListNode(13);
+        ListNode second=new ListNode(3);
+        ListNode third=new ListNode(4);
         ml1.head.next=second;
         second.next=third;
         third.next=null;
@@ -79,8 +79,8 @@ public class Mergelist{
         ml1.insertatendd(new ListNode(25));
         display(ml1.head);
         Mergelist ml2=new Mergelist();
-       ml2.head=new ListNode(2);
-        ListNode Sec=new ListNode(3);
+       ml2.head=new ListNode(5);
+        ListNode Sec=new ListNode(6);
         ml2.head.next=Sec;
         Sec.next=null;
         ml2.insertatendd(new ListNode(7));
