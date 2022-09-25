@@ -26,7 +26,7 @@ public class Graphs {
         E++;
 
     }
-    /*public void printlist(int nodes)
+    public void printlist(int nodes)
     {   
         System.out.println("Vertices are"+nodes+"Edges are:"+E);
         for(int i=0;i<nodes;i++)
@@ -35,7 +35,7 @@ public class Graphs {
             System.out.print(a[i]);
             System.out.println(" ");
         }
-    }*/
+    }
     public void bfs(int s)
     {
         boolean[] visited=new boolean[V];
@@ -66,8 +66,8 @@ public class Graphs {
         g.addedge(2, 3);
         g.addedge(3, 0);
         g.addedge(2, 4);
-       // g.printlist(4);
-       g.bfs(0);
+        g.printlist(4);
+       //g.bfs(0);
 
 
     }
