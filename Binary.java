@@ -125,7 +125,36 @@ public class Binary{
             System.out.println(root.data);
         }
     }
+    public int biggest()
+    {   
+        return biggest(root);
 
+    }
+    public int biggest(TreeNodee root)
+    {
+        if(root==null){
+            return Integer.MIN_VALUE;
+        }
+        int result=root.data;
+        int left=biggest(root.left);
+        int right=biggest(root.right);
+        if(left>result)
+        {
+            result=left;
+        }
+        if(right>result) 
+        {
+            result=right;
+           // System.out.println(result);
+
+        }
+        
+        return result;
+
+        
+
+
+    }
 
 
     public static void main(String[] args) {
@@ -134,7 +163,8 @@ public class Binary{
      // b.preorder(b.root);
      //  b.preorderiterative(b.root);
      //b.inorderiterative(b.root);
-     b.postorderrecursive(b.root);
+    // b.postorderrecursive(b.root);
+     System.out.print(b.biggest());
     }
 
     
